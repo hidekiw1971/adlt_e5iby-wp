@@ -1,0 +1,19 @@
+@use "global" as *;
+
+ul.cards-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(md) {
+    // 
+  }
+}
+
+li.cards-gallery-list {
+  flex-basis: 50%;
+
+  @include mq(md) {
+    flex-basis: 25%;
+    // 
+  }
+}

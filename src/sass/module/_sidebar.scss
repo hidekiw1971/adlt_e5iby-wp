@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.sidebar {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+        flex: 1;
+        background: rgba(245, 245, 245, 1);
+
+    }
+}
+
+
+ul.sidebar-nav {
+    margin: 20px;
+}
+
+
+li.sidebar-list {
+    display: block;
+    box-shadow: rem(0) rem(5) rem(0) rem(1) rgba(192, 192, 192, 0.5);
+    transition: 0.1s;
+    border-radius: rem(5);
+}
+
+li.sidebar-list:not(:last-child) {
+    margin-bottom: rem(15);
+}
+
+li.sidebar-list:hover {
+    box-shadow: rem(0) rem(0) rem(0) rem(1) rgba(192, 192, 192, 0.5);
+    position: relative;
+    transform: translateY(rem(5));
+}
+
+.sidebar-list>button {
+    display: block;
+    width: 100%;
+    padding: rem(20) 0;
+}
