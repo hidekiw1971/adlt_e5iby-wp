@@ -4,7 +4,7 @@ a.card {
   display: block;
   width: 100%;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   @include mq(md) {
     // 
@@ -25,15 +25,20 @@ a.card {
 }
 
 h2.card-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  font-size: rem(16);
-  color: rgba(255, 255, 255, 1);
-  background: rgba(51, 51, 51, 0.3);
-  padding: rem(15);
-  border-radius: rem(15);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // z-index: 1;
+  font-size: rem(10);
+  // color: rgba(255, 255, 255, 1);
+  // background: rgba(51, 51, 51, 0.3);
+  // padding: rem(15);
+  // border-radius: rem(15);
+  // ３点リーダー設定
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   width: 100%;
 }

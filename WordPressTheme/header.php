@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>５０歳から契約した有料アダルトビデオのサブスクについて</title>
+  <title>頭文字などはとても使う気にならない。私が先生と知り合いになっ</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -24,5 +24,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="header">
-    <h1>５０歳から契約した有料アダルトビデオのサブスクについて</h1>
+    <a href="<?php echo home_url(); ?>">
+      <h1>頭文字などはとても使う気にならない。私が先生と知り合いになっ</h1>
+    </a>
   </header>
