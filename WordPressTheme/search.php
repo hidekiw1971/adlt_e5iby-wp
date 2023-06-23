@@ -2,12 +2,9 @@
 
 <section class="container">
     <main class="main">
-        <ul class="cards-gallery">
-            <!-- cards-gallery-list -->
-            <?php get_template_part('template-parts/loop', 'article') ?>
-            <!-- /cards-gallery-list -->
-        </ul>
-        <!-- /card -->
+        <!-- function -->
+        <h2>サイト内検索結果</h2>
+        <!-- /function -->
     </main>
     <aside class="sidebar">
         <?php include('sidebar.php'); ?>

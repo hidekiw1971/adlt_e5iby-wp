@@ -95,3 +95,7 @@
 .micromodal-slide[aria-hidden="true"] .modal__container {
     animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
+
+.modal__title {
+    margin-bottom: rem(10);
+}
