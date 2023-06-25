@@ -1,23 +1,20 @@
 <!-- クエリ設定 -->
 <?php
-$post_type = get_query_var('post_type');
-$category_name = get_query_var('category_name');
-$tag = get_query_var('tag');
-// *
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = array(
-    'post_type' => $post_type,
-    'category_name' => $category_name,
-    'tag' => $tag,
+    'post_type' => 'post',
     'posts_per_page' => 10,
-    'paged' => get_query_var('paged') ? get_query_var('paged') : 1
+    'paged' => $paged,
+    's' => get_search_query() // 検索クエリ
 );
-$query = new WP_Query($args);
+$custom_query = new WP_Query($args);
 ?>
 <!-- /クエリ設定 -->
 
-<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+<?php if ($custom_query->have_posts()) : ?>
+    <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
         <li class="cards-gallery-list">
-            <a class="card" href="<?php echo get_permalink(); ?>">
+            <a class="card" href="<?php the_permalink(); ?>">
                 <figure class="card-figure">
                     <?php if (has_post_thumbnail()) :
                         $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
@@ -32,6 +29,9 @@ $query = new WP_Query($args);
                 <h2 class="card-title"><?php the_title(); ?></h2>
             </a>
         </li>
-<?php endwhile;
-endif; ?>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+<?php else : ?>
+    <p>検索結果はありませんでした。</p>
+<?php endif; ?>
 <!-- cards-list -->

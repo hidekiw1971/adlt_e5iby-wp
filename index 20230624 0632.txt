@@ -272,7 +272,7 @@
             <!-- function -->
             <div class="search">
               <form class="search-form">
-                <input id="form1" type="search" placeholder="キーワードを入力">
+                <input id="form1" type="text" placeholder="キーワードを入力">
                 <i class="bi bi-search"></i>
               </form>
             </div>
@@ -284,130 +284,6 @@
     </div>
   </div>
   <!-- /modal-2 -->
-  <!-- modal-3 カテゴリー -->
-  <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <div role="document">
-          <header class="modal__header">
-            <h2 class="modal__title" id="modal-1-title">
-              カテゴリー
-            </h2>
-            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-          </header>
-          <main class="modal__content" id="modal-1-content">
-            <!-- function -->
-            <ul class="categories">
-              <li class="categories-list"><a href="#" class="categories-link">ではみなさん</a></li>
-              <li class="categories-list"><a href="#" class="categories-link">が手をあげま</a></li>
-              <li class="categories-list"><a href="#" class="categories-link">の流れた</a></li>
-              <li class="categories-list"><a href="#" class="categories-link">ジョバンニ</a></li>
-              <li class="categories-list"><a href="#" class="categories-link">では</a></li>
-              <li class="categories-list"><a href="#" class="categories-link">が手が手をあげま</a></li>
-              <li class="categories-list"><a href="#" class="categories-link">の流た</a></li>
-              <li class="categories-list"><a href="#" class="categories-link">ジョバああンニ</a></li>
-            </ul>
-            <!-- /function -->
-          </main>
-          <footer class="modal__footer"></footer>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /modal-3 カテゴリー -->
-  <!-- modal-4 タグ -->
-  <div class="modal micromodal-slide" id="modal-4" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <div role="document">
-          <header class="modal__header">
-            <h2 class="modal__title" id="modal-1-title">
-              カテゴリー
-            </h2>
-            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-          </header>
-          <main class="modal__content" id="modal-1-content">
-            <!-- function -->
-            <ul class="tags">
-              <li class="tags-list"><a href="#" class="tags-link">はその人を</a></li>
-              <li class="tags-list"><a href="#" class="tags-link">を憚かる遠慮とい</a></li>
-              <li class="tags-list"><a href="#" class="tags-link">生」といいた</a></li>
-              <li class="tags-list"><a href="#" class="tags-link">私はそっても心持は同じ事で</a></li>
-              <li class="tags-list"><a href="#" class="tags-link">いいたくも</a></li>
-            </ul>
-            <!-- /function -->
-          </main>
-          <footer class="modal__footer"></footer>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /modal-4 タグ -->
-  <!-- modal-5 タグ -->
-  <div class="modal micromodal-slide" id="modal-5" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <div role="document">
-          <header class="modal__header">
-            <h2 class="modal__title" id="modal-1-title">
-              アーカイブ
-            </h2>
-            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-          </header>
-          <main class="modal__content" id="modal-1-content">
-            <!-- function -->
-            <div class="archive">
-              <ul class="archive-monthly">
-                <p>2020</p>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">1月（3）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">2月（4）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">3月（3）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">4月（3）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">5月（4）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">6月（3）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">7月（3）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">8月（4）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">9月（3）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">10月（3）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">11月（4）</a></li>
-                <li class="archive-monthly-list"><i class="bi bi-caret-right-fill"></i><a href="#"
-                    class="archive-monthly-link">12月（3）</a></li>
-              </ul>
-              <ul class="archive-monthly">
-                <p>2020</p>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">1月（3）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">2月（4）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">3月（3）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">4月（3）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">5月（4）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">6月（3）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">7月（3）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">8月（4）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">9月（3）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">10月（3）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">11月（4）</a></li>
-                <li class="archive-monthly-list"><a href="#" class="archive-monthly-link">12月（3）</a></li>
-              </ul>
-            </div>
-            <!-- /function -->
-          </main>
-          <footer class="modal__footer"></footer>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /modal-5 タグ -->
   <!-- /modal window -->
   <footer class="footer">
     <small>&copy;2023/06 ５０歳から契約した有料アダルトビデオのサブスクについて All rights reserved.</small>

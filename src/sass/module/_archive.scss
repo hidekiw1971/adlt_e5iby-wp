@@ -1,0 +1,26 @@
+@use "global" as *;
+
+div.archive {
+    @include mq(md) {
+        display: flex;
+        flex-wrap: wrap;
+        // 
+    }
+}
+
+ul.archive-monthly {
+    @include mq(md) {
+        margin-right: rem(20);
+        margin-bottom: rem(20);
+        // 
+    }
+}
+
+a.archive-monthly-link {
+    display: block;
+    width: 100%;
+}
+
+li.archive-monthly-list {
+    display: flex;
+}
