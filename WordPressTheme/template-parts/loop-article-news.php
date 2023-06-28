@@ -1,24 +1,25 @@
 <!-- クエリ設定 -->
 <?php
-$post_type = get_query_var('post_type');
-$category_name = get_query_var('category_name');
+// $post_type = get_query_var('post_type');
+$post_type = 'news';
+// $category_id = get_query_var('cat');
+$category_id = 'news-category';
 $tag = get_query_var('tag');
-// *
 $args = array(
     'post_type' => $post_type,
-    'category_name' => $category_name,
-    'tag' => $tag,
-    'posts_per_page' => 10,
+    'posts_per_page' => 3,
     'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
-    'groupby' => 'MONTH(post_date)',
+    'cat' => $category_id,
+    'tag' => $tag,
     'monthnum' => get_query_var('monthnum'),
     'year' => get_query_var('year')
 );
-$query = new WP_Query($args);
 ?>
 <!-- /クエリ設定 -->
 
-<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+<?php
+$query = new WP_Query($args);
+if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
         <li class="cards-gallery-list">
             <a class="card" href="<?php echo get_permalink(); ?>">
                 <figure class="card-figure">

@@ -1,8 +1,12 @@
 <!-- クエリ設定 -->
 <?php
-$post_type = get_query_var('post_type');
+$post_type = 'news';
 $category_name = get_query_var('category_name');
-$tag = get_query_var('tag');
+// $category_name = get_query_var('news-category');
+echo $category_name;
+$term = get_term($tax_name);
+// $tag = get_query_var('tag');
+$tag = get_query_var('news-tag');
 // *
 $args = array(
     'post_type' => $post_type,
