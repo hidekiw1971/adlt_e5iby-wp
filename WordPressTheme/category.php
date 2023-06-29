@@ -15,8 +15,6 @@
         <?php include('sidebar.php'); ?>
     </aside>
 </section>
-<!-- modal-1 お問い合わせ -->
-<?php include('modal/modal-1.php'); ?>
 <!-- modal -->
 <?php include('modal/modal.php') ?>
 <!-- /modal -->

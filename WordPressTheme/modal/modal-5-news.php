@@ -12,7 +12,7 @@
             <?php
             $args = array(
                 'type' => 'monthly',
-                'post_type' => 'post',
+                'post_type' => 'news',
                 'show_post_count' => true,
                 'echo' => false
             );

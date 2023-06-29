@@ -1,6 +1,6 @@
 <!-- クエリ設定 -->
 <?php
-$post_type = get_query_var('post_type');
+$post_type = get_post_type();
 $category_name = get_query_var('category_name');
 $tag = get_query_var('tag');
 // *

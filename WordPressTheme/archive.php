@@ -6,7 +6,7 @@
         <!-- cards-gallery-list -->
         <ul class="cards-gallery">
             <!-- cards-gallery-list -->
-            <?php get_template_part('template-parts/loop', 'article-news') ?>
+            <?php get_template_part('template-parts/loop', 'article') ?>
             <!-- /cards-gallery-list -->
         </ul>
         <!-- /cards-gallery -->
@@ -15,8 +15,6 @@
         <?php include('sidebar.php'); ?>
     </aside>
 </section>
-<!-- modal-1 お問い合わせ -->
-<?php include('modal/modal-1.php'); ?>
 <!-- modal -->
 <?php include('modal/modal.php') ?>
 <!-- /modal -->
