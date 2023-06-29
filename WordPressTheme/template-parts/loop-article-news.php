@@ -1,19 +1,22 @@
 <!-- クエリ設定 -->
 <?php
-// $post_type = get_query_var('post_type');
-$post_type = 'news';
-// $category_id = get_query_var('cat');
-$category_id = 'news-category';
-$tag = get_query_var('tag');
+$queried_object = get_queried_object();
+$category_id = $queried_object->term_id;
+$taxonomy = $queried_object->taxonomy;
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = array(
-    'post_type' => $post_type,
+    'post_type' => 'news',
     'posts_per_page' => 3,
-    'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
-    'cat' => $category_id,
-    'tag' => $tag,
-    'monthnum' => get_query_var('monthnum'),
-    'year' => get_query_var('year')
+    'paged' => $paged,
+    'tax_query' => array(
+        array(
+            'taxonomy' => $taxonomy,
+            'field' => 'term_id',
+            'terms' => $category_id,
+        )
+    )
 );
+$query = new WP_Query($args);
 ?>
 <!-- /クエリ設定 -->
 

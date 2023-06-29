@@ -2,6 +2,7 @@
 
 <section class="container">
     <main class="main">
+        <h2>tag.php</h2>
         <!-- cards-gallery-list -->
         <ul class="cards-gallery">
             <!-- cards-gallery-list -->
@@ -16,14 +17,8 @@
 </section>
 <!-- modal-1 お問い合わせ -->
 <?php include('modal/modal-1.php'); ?>
-<!-- /modal-1 お問い合わせ -->
-
-<!-- modal-2 サイト内検索 -->
-<?php include('modal/modal-2.php'); ?>
-<!-- /modal-2 サイト内検索 -->
-
-<!-- modal-3 カテゴリー -->
-<?php include('modal/modal-3.php'); ?>
-<!-- /modal-3 カテゴリー -->
+<!-- modal -->
+<?php include('modal/modal.php') ?>
+<!-- /modal -->
 
 <?php get_footer(); ?>

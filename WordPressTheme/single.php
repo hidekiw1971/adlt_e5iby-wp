@@ -22,12 +22,8 @@
         <?php include('sidebar.php'); ?>
     </aside>
 </section>
-<!-- modal-1 お問い合わせ -->
-<?php include('modal/modal-1.php'); ?>
-<!-- /modal-1 お問い合わせ -->
-
-<!-- modal-2 サイト内検索 -->
-<?php include('modal/modal-2.php'); ?>
-<!-- /modal-2 サイト内検索 -->
+<!-- modal -->
+<?php include('modal/modal.php') ?>
+<!-- /modal -->
 
 <?php get_footer(); ?>

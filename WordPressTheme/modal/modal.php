@@ -10,10 +10,10 @@
 <?php include('modal-3.php'); ?>
 <!-- /modal-3 カテゴリー -->
 
-<!-- modal-4 カテゴリー -->
+<!-- modal-4 タグー -->
 <?php include('modal-4.php'); ?>
-<!-- /modal-4 カテゴリー -->
+<!-- /modal-4 タグ -->
 
-<!-- modal-5 カテゴリー -->
+<!-- modal-5 アーカイブ -->
 <?php include('modal-5.php'); ?>
-<!-- /modal-5 カテゴリー -->
+<!-- /modal-5 アーカイブ -->
