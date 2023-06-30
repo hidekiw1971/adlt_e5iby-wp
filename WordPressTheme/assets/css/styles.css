@@ -286,12 +286,24 @@ a.categories-link {
 
 .header {
 	background: rgb(248, 248, 255);
+	display: block;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	margin-bottom: 3.125rem;
 	max-width: 95%;
 	text-align: center;
 	width: 100%;
+}
+
+.js-drawer span {
+	background: rgba(255, 0, 0, .5);
+	border-radius: 3.125rem;
+	display: block;
+	height: 50px;
+	height: 3.125rem;
+	margin: 0 auto;
+	width: 50px;
+	width: 3.125rem;
 }
 
 .main {
@@ -494,6 +506,10 @@ ul.archive-monthly {
 li.cards-gallery-list {
 	-ms-flex-preferred-size: 25%;
 	flex-basis: 25%;
+}
+
+.js-drawer span {
+	display: none;
 }
 
 .sidebar {
