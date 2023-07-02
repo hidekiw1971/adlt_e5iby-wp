@@ -6,7 +6,7 @@
         <!-- cards-gallery-list -->
         <ul class="cards-gallery">
             <!-- cards-gallery-list -->
-            <?php get_template_part('template-parts/loop', 'article-archive-news') ?>
+            <?php get_template_part('template-parts/loop', 'article-news') ?>
             <!-- /cards-gallery-list -->
         </ul>
         <!-- /cards-gallery -->

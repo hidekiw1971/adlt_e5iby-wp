@@ -17,8 +17,13 @@
     background: rgba(255, 255, 255, 1);
     padding: rem(30);
     margin: 0 rem(10);
-    width: 50%;
+    width: 90%;
     overflow-y: auto;
+
+    @include mq(md) {
+        width: 50%;
+        // 
+    }
 }
 
 .modal__header {
@@ -98,4 +103,19 @@
 
 .modal__title {
     margin-bottom: rem(10);
+}
+
+// modal-mobile
+.modal-mobile {
+    display: block;
+    margin: rem(5) auto;
+
+    @include mq(md) {
+        display: none;
+        // 
+    }
+}
+
+i.bi.bi-plus-circle-fill::before {
+    font-size: 40px;
 }

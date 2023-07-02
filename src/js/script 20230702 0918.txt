@@ -1,0 +1,24 @@
+
+jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+
+  jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+    MicroModal.init({
+      awaitCloseAnimation: true,
+      awaitOpenAnimation: true,
+      disableScroll: true
+    });
+
+    // 
+    $(function () {
+      /* Modal2へのボタン押下時のイベント */
+      $('.modal-mobile').on('click', function () {
+        changeModal('modal-mobile', 'modal-1');
+      });
+      /* モーダルの切り替え */
+      function changeModal(beforeModal, afterModal) {
+        $('#' + beforeModal).modal('hide');
+        $('#' + afterModal).modal('show');
+      }
+    });
+    // 
+  });

@@ -335,7 +335,7 @@ a.categories-link {
 	overflow-y: auto;
 	padding: 30px;
 	padding: 1.875rem;
-	width: 50%;
+	width: 90%;
 }
 
 .modal__header {
@@ -385,6 +385,16 @@ a.categories-link {
 .modal__title {
 	margin-bottom: 10px;
 	margin-bottom: 0.625rem;
+}
+
+.modal-mobile {
+	display: block;
+	margin: 5px auto;
+	margin: 0.3125rem auto;
+}
+
+i.bi.bi-plus-circle-fill::before {
+	font-size: 40px;
 }
 
 .search-form {
@@ -509,6 +519,14 @@ li.cards-gallery-list {
 }
 
 .js-drawer span {
+	display: none;
+}
+
+.modal__container {
+	width: 50%;
+}
+
+.modal-mobile {
 	display: none;
 }
 

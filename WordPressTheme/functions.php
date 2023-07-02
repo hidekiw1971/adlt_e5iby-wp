@@ -17,6 +17,8 @@ function my_script_init()
 	wp_enqueue_script('polyfill', '//polyfill.io/v3/polyfill.min.js?features=es6', "", "0.0.0", true);
 	wp_enqueue_script('micromodal', '//unpkg.com/micromodal/dist/micromodal.min.js', "", "0.0.0", true);
 	wp_enqueue_style('bootstrap-icons', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css', array(), '0.0.0', 'all');
+	wp_enqueue_script('bootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.js', array('jquery'), '0.0.0', true);
+	wp_enqueue_style('boootstrap4-css', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), '0.0.0');
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 

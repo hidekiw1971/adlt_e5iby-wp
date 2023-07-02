@@ -1,54 +1,59 @@
-        <!-- sidebar-nav -->
-        <ul class="sidebar-nav">
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-1" role="button">お問い合わせ</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-2" role="button">検索</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-3" role="button">カテゴリー</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-4" role="button">タグ</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-5" role="button">アーカイブ</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-c1" role="button">コンテンツ</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-c2" role="button">コンテンツ</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-c3" role="button">コンテンツ</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-c4" role="button">コンテンツ</button>
-            </li>
-            <!-- /sidebar-list -->
-            <!-- sidebar-list -->
-            <li class="sidebar-list">
-                <button data-micromodal-trigger="modal-c5" role="button">コンテンツ</button>
-            </li>
-            <!-- /sidebar-list -->
-        </ul>
-        <!-- /sidebar-nav -->
+      <!-- sidebar-nav -->
+      <ul class="sidebar-nav">
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-1" data-dismiss="modal">お問い合わせ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-2" data-dismiss="modal">検索</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-3" data-dismiss="modal">カテゴリー</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-4" data-dismiss="modal">タグ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-5" data-dismiss="modal">アーカイブ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-6" data-dismiss="modal">お知らせ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-7" data-dismiss="modal">コンテンツ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-8" data-dismiss="modal">コンテンツ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-9" data-dismiss="modal">コンテンツ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-10" data-dismiss="modal">コンテンツ</button>
+          </li>
+          <!-- /sidebar-list -->
+          <!-- sidebar-list -->
+          <li class="sidebar-list">
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-11" data-dismiss="modal">コンテンツ</button>
+          </li>
+          <!-- /sidebar-list -->
+      </ul>
+      <!-- /sidebar-nav -->
