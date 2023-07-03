@@ -7,7 +7,7 @@
 <main class="modal__content" id="modal-2-content">
     <!-- function -->
     <div class="archive">
-        <!-- アーカイブリスト表示（post） -->
+        <!-- アーカイブリスト表示（news） -->
         <ul class="archive-monthly">
             <?php
             $args = array(

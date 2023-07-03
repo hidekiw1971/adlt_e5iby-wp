@@ -393,7 +393,7 @@ a.categories-link {
 	margin: 0.3125rem auto;
 }
 
-i.bi.bi-plus-circle-fill::before {
+i.bi.bi-check-circle-fill::before {
 	font-size: 40px;
 }
 
