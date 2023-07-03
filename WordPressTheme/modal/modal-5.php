@@ -26,8 +26,7 @@
               <!-- /モーダルの本文 -->
               <!-- モーダルのフッター -->
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる1</button>
-                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-1-1" data-dismiss="modal">モーダル1-1へ</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
               </div>
               <!-- /モーダルのフッター -->
           </div>

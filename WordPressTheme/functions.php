@@ -39,3 +39,16 @@ function catch_that_image()
 	}
 	return $first_img;
 }
+
+// 管理画面のカスタム投稿一覧を日付順で表示する
+function admin_custom_posttype_order($wp_query)
+{
+	if (is_admin()) {
+		$post_type = $wp_query->query['post_type'];
+		if ($post_type == 'news') {
+			$wp_query->set('orderby', 'date'); //並べ替えの基準(日付)
+			$wp_query->set('order', 'DESC'); //新しい順。古い順にしたい場合はASCを指定
+		}
+	}
+}
+add_filter('pre_get_posts', 'admin_custom_posttype_order');

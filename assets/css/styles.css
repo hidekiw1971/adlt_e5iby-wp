@@ -388,13 +388,23 @@ a.categories-link {
 }
 
 .modal-mobile {
+	bottom: 0;
 	display: block;
 	margin: 5px auto;
 	margin: 0.3125rem auto;
+	position: fixed;
+	width: 100%;
 }
 
 i.bi.bi-check-circle-fill::before {
 	font-size: 40px;
+	opacity: 0.1;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+i.bi.bi-check-circle-fill:hover::before {
+	opacity: 1;
 }
 
 .search-form {

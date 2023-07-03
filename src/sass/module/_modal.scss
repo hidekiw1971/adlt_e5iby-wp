@@ -108,6 +108,9 @@
 // modal-mobile
 .modal-mobile {
     display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     margin: rem(5) auto;
 
     @include mq(md) {
@@ -118,4 +121,12 @@
 
 i.bi.bi-check-circle-fill::before {
     font-size: 40px;
+    opacity: 0.1;
+    transition: 0.3s;
+
+}
+
+i.bi.bi-check-circle-fill:hover::before {
+    opacity: 1;
+
 }

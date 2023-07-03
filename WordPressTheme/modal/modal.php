@@ -17,3 +17,7 @@
 <!-- modal-5 アーカイブ -->
 <?php include('modal-5.php'); ?>
 <!-- /modal-5 アーカイブ -->
+
+<!-- modal-mobile アーカイブ -->
+<?php include('modal-mobile.php'); ?>
+<!-- /modal-mobile アーカイブ -->
