@@ -8,7 +8,7 @@ $args = array(
     'post_type' => $post_type,
     'category_name' => $category_name,
     'tag' => $tag,
-    'posts_per_page' => 10,
+    'posts_per_page' => 4,
     'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
     'groupby' => 'MONTH(post_date)',
     'monthnum' => get_query_var('monthnum'),
@@ -37,4 +37,11 @@ $query = new WP_Query($args);
         </li>
 <?php endwhile;
 endif; ?>
+<!-- wp-pagenavi -->
+<?php if (function_exists('wp_pagenavi')) {
+    wp_pagenavi(array('query' => $query));
+} else {
+    echo "ページナビゲーションプラグインが正しく設定されていません。";
+}; ?>
+<!-- /wp-pagenavi -->
 <!-- cards-list -->
