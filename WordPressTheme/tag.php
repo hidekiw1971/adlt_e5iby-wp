@@ -3,12 +3,10 @@
 <section class="container">
     <main class="main">
         <h2>tag.php</h2>
+        <!-- cards-gallery -->
         <!-- cards-gallery-list -->
-        <ul class="cards-gallery">
-            <!-- cards-gallery-list -->
-            <?php get_template_part('template-parts/loop', 'article') ?>
-            <!-- /cards-gallery-list -->
-        </ul>
+        <?php get_template_part('template-parts/loop', 'article') ?>
+        <!-- /cards-gallery-list -->
         <!-- /cards-gallery -->
     </main>
     <aside class="sidebar">

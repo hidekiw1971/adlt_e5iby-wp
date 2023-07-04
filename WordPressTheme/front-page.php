@@ -4,11 +4,9 @@
     <main class="main">
         <h2>front-page.php</h2>
         <!-- cards-gallery-list -->
-        <ul class="cards-gallery">
-            <!-- cards-gallery-list -->
-            <?php get_template_part('template-parts/loop', 'article') ?>
-            <!-- /cards-gallery-list -->
-        </ul>
+        <!-- cards-gallery-list -->
+        <?php get_template_part('template-parts/loop', 'article') ?>
+        <!-- /cards-gallery-list -->
         <!-- /cards-gallery -->
     </main>
     <aside class="sidebar">
