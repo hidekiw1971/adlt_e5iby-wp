@@ -17,18 +17,14 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="icon" href="" />
-  <!-- css swiper@10 -->
-  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+  <link rel="”icon”" href="" />
   <!-- css -->
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <!-- js swiper -->
-  <script src="/assets/js/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="/assets/js/script.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-  <script defer src="/assets/js/script.js"></script>
 </head>
 
 <body>
@@ -42,34 +38,17 @@
       <!-- 記事内容はここから -->
       <section class="article">
         <h1>これは世間を憚かる遠慮というよりも、その方が私にとって自然</h1>
-        <!-- swiper -->
-        <div class="swiper swiper-single">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <figure class="swiper-image">
-                <img src="https://cdn.pixabay.com/photo/2014/09/07/22/33/motorbike-438464_1280.jpg" alt="">
-              </figure>
-            </div>
-            <!-- swiper-slide -->
-            <div class="swiper-slide">
-              <figure class="swiper-image">
-                <img src="https://cdn.pixabay.com/photo/2015/09/08/21/02/superbike-930715_1280.jpg" alt="">
-              </figure>
-            </div>
-            <!-- swiper-slide -->
-            <div class="swiper-slide">
-              <figure class="swiper-image">
-                <img src="https://cdn.pixabay.com/photo/2016/11/29/10/21/dirt-bike-1868996_1280.jpg" alt="">
-              </figure>
-            </div>
-            <!-- swiper-slide -->
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <!-- <div class="swiper-scrollbar"></div> -->
-        </div>
-        <!-- /swiper -->
+        <img
+          src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+          alt="">
+        <h2>このぼんやりと白いものがほんとうは何かご承知ですか」先生</h2>
+        <h3>このぼんやりと白いものがほんとうは何かご承知ですか」先生</h3>
+        <h4>このぼんやりと白いものがほんとうは何かご承知ですか」先生</h4>
+        <h5>このぼんやりと白いものがほんとうは何かご承知ですか」先生</h5>
+        <h6>このぼんやりと白いものがほんとうは何かご承知ですか」先生</h6>
+        <p>
+          「ではみなさんは、そういうふうに川だと言われたり、乳の流れたあとだと言われたりしていた、このぼんやりと白いものがほんとうは何かご承知ですか」先生は、黒板につるした大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを指しながら、みんなに問いをかけました。カムパネルラが手をあげました。それから四、五人手をあげました。ジョバンニも手をあげようとして、急いでそのままやめました。たしかにあれが
+        </p>
       </section>
       <!-- 記事内容はここまで -->
     </main>

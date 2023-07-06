@@ -269,8 +269,6 @@ a.categories-link {
 .container {
 	background: rgb(248, 248, 255);
 	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	margin: 0 auto;
 	max-width: 95%;
 	width: 100%;
@@ -459,6 +457,26 @@ li.sidebar-list:hover {
 	padding: 20px 0;
 	padding: 1.25rem 0;
 	width: 100%;
+}
+
+.swiper-single {
+	width: 50%;
+}
+
+figure.swiper-image {
+	background: rgba(255, 192, 203, .5);
+	display: block;
+	overflow: hidden;
+	padding-top: 63%;
+	position: relative;
+}
+
+figure.swiper-image > img {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 ul.tags {

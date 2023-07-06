@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>頭文字などはとても使う気にならない。私が先生と知り合いになっ</title>
+  <title>大阪発 大人の遊び方（アダルト）：How to play for adults in osaka of japan.</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -25,6 +25,6 @@
   <?php wp_body_open(); ?>
   <header class="header">
     <a href="<?php echo home_url(); ?>">
-      <h1>頭文字などはとても使う気にならない。私が先生と知り合いになっ</h1>
+      <h1>大阪発 大人の遊び方（アダルト）</h1>
     </a>
   </header>

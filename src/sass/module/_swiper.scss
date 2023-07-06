@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.swiper-single {
+    width: 50%;
+}
+
+figure.swiper-image {
+    display: block;
+    // width: 100%;
+    padding-top: 63%;
+    background: rgba(255, 192, 203, 0.5);
+    position: relative;
+    overflow: hidden;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+figure.swiper-image>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(md) {
+        // 
+    }
+}
