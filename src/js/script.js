@@ -1,7 +1,8 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
   // 開始
-  const swiper = new Swiper('.swiper', {
+  // swipre-singe
+  const swiper = new Swiper('.swiper-single', {
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
@@ -14,5 +15,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  });  // 終了
+  });
+
+  // kensho
+  window.addEventListener('scroll', function () {
+    var button = document.querySelector('.article-svideo');
+    if (button) {
+      if (window.scrollY > 0) {
+        button.classList.add('hidden');
+      } else {
+        button.classList.remove('hidden');
+      }
+    }
+  });
+  // 終了
 });

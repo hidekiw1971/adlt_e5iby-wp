@@ -1,30 +1,74 @@
 @use "global" as *;
 
-.article {
+section.article {
     margin-bottom: rem(30);
+    text-align: center;
+    padding: rem(5);
 }
 
-.article>img {
+section.article>img {
     width: 100%;
     margin: 0 auto;
 }
 
-.article>h1,
-.article>h2,
-.article>h3,
-.article>h4,
-.article>h5 {
+section.article h1,
+section.article h2,
+section.article h3,
+section.article h4,
+section.article h5 {
+    margin-bottom: rem(10);
+    color: rgba(255, 20, 147, 1);
+}
+
+section.article>p {
     margin-bottom: rem(10);
 }
 
-.article>h1 {
+section.article>h1 {
     font-size: rem(24);
 }
 
-.article-pnlink {
+section.article-pnlink {
     text-align: center;
 }
 
-.article-pnlink>a {
+section.article-pnlink>a {
     padding: 0 rem(10);
+}
+
+section.article>video {
+    width: 100%;
+
+    @include mq(md) {
+        width: 70%;
+        // 
+    }
+}
+
+section.article>nav {
+    margin-bottom: rem(30);
+}
+
+nav.article-index>ul>li:not(:last-child) {
+    margin-bottom: rem(10);
+}
+
+button.article-svideo {
+    display: block;
+    width: 100%;
+    padding: rem(5);
+    background: rgba(255, 20, 147, 0.2);
+    position: fixed;
+    z-index: 1;
+    bottom: rem(30);
+    transition: 0.2s;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+button.article-svideo:hover {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(255, 20, 147, 1);
 }
