@@ -238,40 +238,34 @@ button.article-svideo:hover {
 	color: rgb(255, 255, 255);
 }
 
-a.card {
-	display: block;
-	position: relative;
+.cards-swiper {
+	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 	width: 100%;
 }
 
-.card-figure {
+.cards-swiper figure.swiper-image {
+	background: rgba(255, 192, 203, .5);
+	display: block;
 	overflow: hidden;
 	padding-top: 63%;
 	position: relative;
 }
 
-.card-image {
+.cards-swiper figure.swiper-image > img {
 	left: 50%;
 	position: absolute;
 	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%) scale(1.5);
+	transform: translate(-50%, -50%) scale(1.5);
 }
 
-h2.card-title {
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 1;
-	display: -webkit-box;
-	font-size: 10px;
-	font-size: 0.625rem;
-	overflow: hidden;
-	width: 100%;
+a.cards-swiper figure.swiper-image {
+	margin: 0;
 }
 
 ul.cards-gallery {
 	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
@@ -523,6 +517,12 @@ figure.swiper-image > img {
 	transform: translate(-50%, -50%);
 }
 
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+	margin: 0;
+}
+
 ul.tags {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -624,6 +624,8 @@ li.cards-gallery-list {
 }
 
 .swiper-single {
+	margin: 0 auto;
+	margin-bottom: 0.625rem;
 	width: 70%;
 }
 

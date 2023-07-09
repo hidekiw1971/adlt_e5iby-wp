@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.cards-swiper {
+    width: 100%;
+    margin-bottom: rem(10);
+}
+
+.cards-swiper figure.swiper-image {
+    display: block;
+    // width: 100%;
+    padding-top: 63%;
+    background: rgba(255, 192, 203, 0.5);
+    position: relative;
+    overflow: hidden;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.cards-swiper figure.swiper-image>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+a.cards-swiper figure.swiper-image {
+    margin: 0;
+}

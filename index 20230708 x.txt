@@ -30,7 +30,7 @@
   <script src="/assets/js/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="/src/js/script.js"></script>
+  <script defer src="/assets/js/script.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <!-- js bootstrap4 -->
@@ -47,136 +47,17 @@
     <main class="main">
       <ul class="cards-gallery">
         <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
+          <a class="card" href="/single.html">
+            <div class="swiper swiper-index">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure class="swiper-image">
+                    <img src="https://cdn.pixabay.com/photo/2014/09/07/22/33/motorbike-438464_1280.jpg" alt="">
+                  </figure>
+                </div>
+                <!-- swiper-slide -->
               </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
             </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
-          </a>
-        </li>
-        <!-- cards-list -->
-        <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
-          </a>
-        </li>
-        <!-- cards-list -->
-        <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
-          </a>
-        </li>
-        <!-- cards-list -->
-        <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
-          </a>
-        </li>
-        <!-- cards-list -->
-        <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
             <!-- /swiper -->
           </a>
         </li>

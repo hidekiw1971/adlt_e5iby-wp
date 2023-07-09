@@ -2,30 +2,49 @@
 
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-  // 開始
-  // swipre-singe
-  const swiper = new Swiper('.swiper-single', {
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+
+  var topBtn = $('.pagetop');
+  topBtn.hide();
+
+  // ボタンの表示設定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 70) {
+      // 指定px以上のスクロールでボタンを表示
+      topBtn.fadeIn();
+    } else {
+      // 画面が指定pxより上ならボタンを非表示
+      topBtn.fadeOut();
+    }
   });
 
-  // スクロール中はcontentsを非表示にする
-  $(function () {
-    $(window).on("scroll touchmove", function () { //スクロール中に判断する
-      $(".article-svideo").stop(); //アニメーションしている場合、アニメーションを強制停止
-      $(".article-svideo").css('display', 'none').delay(500).fadeIn('fast');
-      //スクロール中は非表示にして、500ミリ秒遅らせて再び表示
-    });
+  // ボタンをクリックしたらスクロールして上に戻る
+  topBtn.click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300, 'swing');
+    return false;
   });
-  // 終了
+
+  //ドロワーメニュー
+  $("#MenuButton").click(function () {
+    // $(".l-drawer-menu").toggleClass("is-show");
+    // $(".p-drawer-menu").toggleClass("is-show");
+    $(".js-drawer-open").toggleClass("open");
+    $(".drawer-menu").toggleClass("open");
+    $("html").toggleClass("is-fixed");
+  });
+
+  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
+
+  $(document).on('click', 'a[href*="#"]', function () {
+    var time = 400;
+    var header = $('header').innerHeight();
+    var target = $(this.hash);
+    if (!target.length) return;
+    var targetY = target.offset().top - header;
+    $('html,body').animate({
+      scrollTop: targetY
+    }, time, 'swing');
+    return false;
+  });
 });

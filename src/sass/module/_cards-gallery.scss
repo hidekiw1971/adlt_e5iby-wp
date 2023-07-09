@@ -1,7 +1,8 @@
 @use "global" as *;
 
 ul.cards-gallery {
-  display: flex;
+  // display: flex;
+  display: -webkit-box;
   flex-wrap: wrap;
 
   @include mq(md) {

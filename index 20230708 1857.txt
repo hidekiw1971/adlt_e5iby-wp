@@ -18,19 +18,15 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
-  <!-- css swiper@10 -->
-  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
   <!-- css -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   <!-- css bootstrap cdn -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
   <!-- css bootstrap4 -->
   <link rel="stylesheet" href="/assets/css/bootstrap.css">
-  <!-- js swiper@10 -->
-  <script src="/assets/js/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="/src/js/script.js"></script>
+  <script defer src="/assets/js/script.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <!-- js bootstrap4 -->
@@ -47,137 +43,134 @@
     <main class="main">
       <ul class="cards-gallery">
         <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
+          <a class="card" href="/single.html">
+            <figure class="card-figure">
+              <img class="card-image"
+                src="https://global.canon/ja/environment/bird-branch/photo-gallery/iwatsubame/img/gallery-iwatsubame-main-t@2x.jpg"
+                alt="">
+            </figure>
+            <h2 class="card-title">作品タイトル</h2>
           </a>
         </li>
         <!-- cards-list -->
         <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル作品タイトル作品タイトル作品タイトル作品タイトル</h2>
           </a>
         </li>
         <!-- cards-list -->
         <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/hototogisu/img/gallery-hototogisu-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
           </a>
         </li>
         <!-- cards-list -->
         <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/hashibosogarasu/img/gallery-hashibosogarasu-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
           </a>
         </li>
         <!-- cards-list -->
         <li class="cards-gallery-list">
-          <a class="swiper cards-swiper" href="/single.html">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-03.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-04.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="swiper-image">
-                  <img src="https://www.honda.co.jp/CB1300/assets/images/design/image-02.jpg" alt="">
-                </figure>
-              </div>
-              <!-- swiper-slide -->
-            </div>
-            <h2 class="card-title">タイトル</h2>
-            <!-- /swiper -->
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/kisekirei/img/gallery-kisekirei-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
+          </a>
+        </li>
+        <!-- cards-list -->
+        <li class="cards-gallery-list">
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/akahara/img/gallery-akahara-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
+          </a>
+        </li>
+        <!-- cards-list -->
+        <li class="cards-gallery-list">
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/ootaka/img/gallery-ootaka-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
+          </a>
+        </li>
+        <!-- cards-list -->
+        <li class="cards-gallery-list">
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/aoji/img/gallery-aoji-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
+          </a>
+        </li>
+        <!-- cards-list -->
+        <li class="cards-gallery-list">
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/shime/img/gallery-shime-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
+          </a>
+        </li>
+        <!-- cards-list -->
+        <li class="cards-gallery-list">
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/akagera/img/gallery-akagera-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
+          </a>
+        </li>
+        <!-- cards-list -->
+        <li class="cards-gallery-list">
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/kochidori/img/gallery-kochidori-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
+          </a>
+        </li>
+        <!-- cards-list -->
+        <li class="cards-gallery-list">
+
+          <figure class="card-figure">
+            <img class="card-image"
+              src="https://global.canon/ja/environment/bird-branch/photo-gallery/keri/img/gallery-keri-main-t@2x.jpg"
+              alt="">
+          </figure>
+          <h2 class="card-title">作品タイトル</h2>
           </a>
         </li>
         <!-- cards-list -->
