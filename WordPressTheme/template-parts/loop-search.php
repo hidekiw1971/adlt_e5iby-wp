@@ -16,19 +16,24 @@ $custom_query = new WP_Query($args);
 <?php elseif ($custom_query->have_posts()) : ?>
     <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
         <li class="cards-gallery-list">
-            <a class="card" href="<?php the_permalink(); ?>">
-                <figure class="card-figure">
-                    <?php if (has_post_thumbnail()) :
-                        $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+            <a class="swiper cards-swiper" href="<?php echo get_permalink(); ?>">
+                <!-- card-swiper -->
+                <div class="swiper-wrapper">
+                    <?php
+                    $swiper_images = get_post_meta(get_the_ID(), 'swiper-img', true);
+                    $swiper_images_array = explode(',', $swiper_images);
+                    foreach ($swiper_images_array as $image_url) {
                     ?>
-                        <img class="card-image" src="<?php echo $thumbnail[0]; ?>" alt="<?php the_title(); ?>">
-                    <?php else :
-                        $catch_image = catch_that_image();
-                    ?>
-                        <img class="card-image" src="<?php echo $catch_image; ?>" alt="<?php the_title(); ?>" />
-                    <?php endif; ?>
-                </figure>
-                <h2 class="card-title"><?php the_title(); ?></h2>
+                        <div class="swiper-slide">
+                            <figure class="swiper-image">
+                                <img src="<?php echo $image_url; ?>" alt="">
+                            </figure>
+                        </div>
+                    <?php } ?>
+                    <!-- swiper-slide -->
+                </div>
+                <!-- /card-swiper -->
+                <h2 class="swiper-card-title"><?php the_title(); ?></h2>
             </a>
         </li>
     <?php endwhile; ?>
