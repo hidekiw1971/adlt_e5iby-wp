@@ -264,6 +264,12 @@ a.cards-swiper figure.swiper-image {
 	margin: 0;
 }
 
+h2.swiper-card-title {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
 ul.cards-gallery {
 	display: -webkit-box;
 	-ms-flex-wrap: wrap;
