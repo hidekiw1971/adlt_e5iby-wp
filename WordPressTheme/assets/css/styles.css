@@ -265,9 +265,13 @@ a.cards-swiper figure.swiper-image {
 }
 
 h2.swiper-card-title {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
 	font-size: 16px;
 	font-size: 1rem;
 	font-weight: 400;
+	overflow: hidden;
 }
 
 ul.cards-gallery {

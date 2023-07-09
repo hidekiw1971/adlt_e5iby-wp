@@ -36,4 +36,8 @@ a.cards-swiper figure.swiper-image {
 h2.swiper-card-title {
     font-size: rem(16);
     font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
