@@ -20,7 +20,8 @@ section.article h5 {
     color: rgba(255, 20, 147, 1);
 }
 
-section.article>p {
+section.article>p,
+section.article>blockquote {
     margin-bottom: rem(10);
 }
 
@@ -71,4 +72,19 @@ button.article-svideo {
 button.article-svideo:hover {
     color: rgba(255, 255, 255, 1);
     background: rgba(255, 20, 147, 1);
+}
+
+.article a.url {
+    display: block;
+    margin-bottom: rem(10);
+}
+
+.article a.url>span::after {
+    content: "\a";
+    white-space: pre;
+
+    @include mq(md) {
+        white-space: nowrap;
+        // 
+    }
 }

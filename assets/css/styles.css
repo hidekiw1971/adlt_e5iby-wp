@@ -186,7 +186,8 @@ section.article h5 {
 	margin-bottom: 0.625rem;
 }
 
-section.article > p {
+section.article > p,
+section.article > blockquote {
 	margin-bottom: 10px;
 	margin-bottom: 0.625rem;
 }
@@ -236,6 +237,17 @@ button.article-svideo {
 button.article-svideo:hover {
 	background: rgb(255, 20, 147);
 	color: rgb(255, 255, 255);
+}
+
+.article a.url {
+	display: block;
+	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
+}
+
+.article a.url > span::after {
+	content: "\a";
+	white-space: pre;
 }
 
 .cards-swiper {
@@ -523,8 +535,8 @@ figure.swiper-image > img {
 	left: 50%;
 	position: absolute;
 	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%) scale(1.2);
+	transform: translate(-50%, -50%) scale(1.2);
 }
 
 .swiper,
@@ -606,6 +618,10 @@ ul.archive-monthly {
 
 section.article > video {
 	width: 70%;
+}
+
+.article a.url > span::after {
+	white-space: nowrap;
 }
 
 li.cards-gallery-list {
