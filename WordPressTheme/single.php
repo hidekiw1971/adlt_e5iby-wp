@@ -126,14 +126,6 @@
             ?>
             <!-- /レーベル -->
 
-            <!-- twitter -->
-            <?php echo "twitter"; ?>
-            <!-- /twitter -->
-
-            <!-- instagram -->
-            <?php echo "instagram"; ?>
-            <!-- /instagram -->
-
             <!-- sample video -->
             <?php echo "<h2>無料サンプル動画</h2>"; ?>
             <?php
@@ -145,6 +137,14 @@
             }
             ?>
             <!-- /sample video -->
+
+            <!-- twitter -->
+            <?php echo "<h2>twitter</h2>"; ?>
+            <!-- /twitter -->
+
+            <!-- instagram -->
+            <?php echo "<h2>instagram</h2>"; ?>
+            <!-- /instagram -->
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php endwhile;
