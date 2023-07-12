@@ -167,9 +167,9 @@ select::-ms-expand {
 	display: -ms-flexbox;
 	display: flex;
 	height: 60px;
-	-webkit-box-pack: left;
-	-ms-flex-pack: left;
-	justify-content: left;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	padding: 5px;
 	padding: 0.3125rem;
 }
@@ -243,6 +243,11 @@ select::-ms-expand {
 .accordion-menu-item-btn-onRight::after {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
+}
+
+.accordion-menu-item {
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 255, .2);
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 255, .2);
 }
 
 a.archive-monthly-link {
@@ -341,6 +346,11 @@ button.article-svideo:hover {
 .article a.url > span::after {
 	content: "\a";
 	white-space: pre;
+}
+
+.article > video {
+	margin-bottom: 30px;
+	margin-bottom: 1.875rem;
 }
 
 .cards-swiper {
@@ -442,6 +452,27 @@ a.categories-link {
 	max-width: 95%;
 	text-align: center;
 	width: 100%;
+}
+
+.instagram {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	height: 1500px;
+	height: 93.75rem;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 0 auto;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+.instagram-media {
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
 }
 
 .js-drawer span {
@@ -665,21 +696,23 @@ a.tags-link {
 	width: 100%;
 }
 
-.accordion-menu-item > ul > li {
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	align-items: flex-start;
+.twitter-wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	height: 1500px;
+	height: 93.75rem;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	margin: 0 auto;
+	overflow-y: scroll;
+	width: 100%;
 }
 
-element.style {
+.twitter-tweet {
 	-ms-flex-preferred-size: 100%;
 	flex-basis: 100%;
 }
@@ -741,6 +774,11 @@ li.cards-gallery-list {
 	flex-basis: 25%;
 }
 
+.instagram-media {
+	-ms-flex-preferred-size: 20%;
+	flex-basis: 20%;
+}
+
 .js-drawer span {
 	display: none;
 }
@@ -767,9 +805,9 @@ li.cards-gallery-list {
 	width: 70%;
 }
 
-element.style {
-	-ms-flex-preferred-size: 25%;
-	flex-basis: 25%;
+.twitter-tweet {
+	-ms-flex-preferred-size: 20%;
+	flex-basis: 20%;
 }
 
 }

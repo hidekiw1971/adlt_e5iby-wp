@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.twitter-wrapper {
+.instagram {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -8,9 +8,13 @@
     height: rem(1500);
     overflow-y: scroll;
     justify-content: center;
+
+    @include mq(md) {
+        // 
+    }
 }
 
-.twitter-tweet {
+.instagram-media {
     flex-basis: 100%;
 
     @include mq(md) {
