@@ -152,6 +152,99 @@ select::-ms-expand {
 	display: none;
 }
 
+.accordion-menu {
+	position: relative;
+	width: 100%;
+}
+
+.accordion-menu-item-btn {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: rgba(255, 20, 147, .31);
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 60px;
+	-webkit-box-pack: left;
+	-ms-flex-pack: left;
+	justify-content: left;
+	padding: 5px;
+	padding: 0.3125rem;
+}
+
+.accordion-menu-item > ul {
+	display: none;
+}
+
+.accordion-menu-item > ul > li {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: rgba(255, 192, 203, .1);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: left;
+	-ms-flex-pack: left;
+	justify-content: left;
+	padding: 5px;
+	padding: 0.3125rem;
+}
+
+.accordion-menu-item-btn {
+	position: relative;
+}
+
+.accordion-menu-item-btn::before {
+	background: rgb(51, 51, 51);
+	content: "";
+	display: block;
+	height: 1px;
+	height: 0.0625rem;
+	position: absolute;
+	right: 25px;
+	right: 1.5625rem;
+	top: 28px;
+	top: 1.75rem;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	width: 10px;
+	width: 0.625rem;
+}
+
+.accordion-menu-item-btn-onLeft::before {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.accordion-menu-item-btn::after {
+	background: rgb(51, 51, 51);
+	content: "";
+	display: block;
+	height: 1px;
+	height: 0.0625rem;
+	position: absolute;
+	right: 31px;
+	right: 1.9375rem;
+	top: 28px;
+	top: 1.75rem;
+	-webkit-transform: rotate(-50deg);
+	transform: rotate(-50deg);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	width: 10px;
+	width: 0.625rem;
+}
+
+.accordion-menu-item-btn-onRight::after {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
 a.archive-monthly-link {
 	display: block;
 	width: 100%;
@@ -572,6 +665,25 @@ a.tags-link {
 	width: 100%;
 }
 
+.accordion-menu-item > ul > li {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+element.style {
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+}
+
 .wp-pagenavi {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -653,6 +765,11 @@ li.cards-gallery-list {
 	margin: 0 auto;
 	margin-bottom: 0.625rem;
 	width: 70%;
+}
+
+element.style {
+	-ms-flex-preferred-size: 25%;
+	flex-basis: 25%;
 }
 
 }

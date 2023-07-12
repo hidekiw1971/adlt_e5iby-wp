@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.accordion-menu-item>ul>li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+element.style {
+    flex-basis: 100%;
+    // width: 100%;
+    // justify-content: center;
+
+    @include mq(md) {
+        flex-basis: 25%;
+    }
+}
