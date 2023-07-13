@@ -138,13 +138,71 @@
             ?>
             <!-- /sample video -->
 
-            <!-- twitter -->
-            <?php echo "<h2>twitter</h2>"; ?>
-            <!-- /twitter -->
+            <!-- accordion(sns) -->
+            <nav class="accordion-menu">
+                <div class="accordion-menu-item">
+                    <div class="accordion-menu-item-btn">
+                        <h2>twitter</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <!-- accordion contents -->
+                            <div class="twitter-wrapper">
+                                <!-- twitter1 -->
+                                <?php
+                                $twitter_code = get_post_meta(get_the_ID(), 'twitter_code', true);
+                                $twitter_code_array = explode(',', $twitter_code);
+                                foreach ($twitter_code_array as $twitter) {
+                                    if (!empty($twitter)) {
+                                        echo $twitter;
+                                    } else {
+                                        echo "twitterはありませんでした。";
+                                    }
+                                }
+                                ?>
+                                <!-- /twitter1 -->
+                            </div>
+                            <!-- twitter-wrapper -->
+                            <!-- /accordion contents -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion-menu-item">
+                    <div class="accordion-menu-item-btn">
+                        <h2>instagram</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <!-- accordion contents -->
+                            <div class="instagram">
+                                <?php
+                                $instagram_code = get_post_meta(get_the_ID(), 'instagram_code', true);
+                                if (!empty($instagram_code)) {
+                                    $instagram_code_array = explode(',', $instagram_code);
+                                    // $data_count = count($instagram_code_array); // データの件数を取得
+                                    // echo "データ件数: " . $data_count; // データの件数を表示
+                                    foreach ($instagram_code_array as $instagram) {
+                                        if (!empty($instagram)) {
+                                            get_template_part('template-parts/loop', 'instagram');
+                                        }
+                                    }
+                                } else {
+                                    echo "Instagramがありません。";
+                                }
+                                ?>
+                                <script async src="//www.instagram.com/embed.js"></script>
+                            </div>
+                            <!-- instagram -->
+                            <!-- /accordion contents -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /accordion(sns) -->
 
-            <!-- instagram -->
-            <?php echo "<h2>instagram</h2>"; ?>
-            <!-- /instagram -->
+            <!-- article-button -->
+            <button class="article-svideo">本編はこちら</button>
+            <!-- /article-button -->
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php endwhile;

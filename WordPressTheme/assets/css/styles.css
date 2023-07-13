@@ -460,12 +460,13 @@ a.categories-link {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	height: 1500px;
-	height: 93.75rem;
+	height: 100%;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 0 auto;
+	max-height: 1500px;
+	max-height: 93.75rem;
 	overflow-y: scroll;
 	width: 100%;
 }
@@ -702,12 +703,13 @@ a.tags-link {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	height: 1500px;
-	height: 93.75rem;
+	height: 100%;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 0 auto;
+	max-height: 1500px;
+	max-height: 93.75rem;
 	overflow-y: scroll;
 	width: 100%;
 }
