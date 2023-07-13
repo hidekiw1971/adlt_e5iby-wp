@@ -176,21 +176,8 @@
                             <!-- accordion contents -->
                             <div class="instagram">
                                 <?php
-                                $instagram_code = get_post_meta(get_the_ID(), 'instagram_code', true);
-                                if (!empty($instagram_code)) {
-                                    $instagram_code_array = explode(',', $instagram_code);
-                                    // $data_count = count($instagram_code_array); // データの件数を取得
-                                    // echo "データ件数: " . $data_count; // データの件数を表示
-                                    foreach ($instagram_code_array as $instagram) {
-                                        if (!empty($instagram)) {
-                                            get_template_part('template-parts/loop', 'instagram');
-                                        }
-                                    }
-                                } else {
-                                    echo "Instagramがありません。";
-                                }
+                                get_template_part('template-parts/loop', 'instagram');
                                 ?>
-                                <script async src="//www.instagram.com/embed.js"></script>
                             </div>
                             <!-- instagram -->
                             <!-- /accordion contents -->
