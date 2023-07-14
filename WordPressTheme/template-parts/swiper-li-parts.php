@@ -9,7 +9,7 @@
             ?>
                 <div class="swiper-slide">
                     <figure class="swiper-image">
-                        <img src="<?php echo $image_url; ?>" alt="">
+                        <img src="<?php echo $image_url; ?>" alt="大阪発 大人の遊び方（アダルト）">
                     </figure>
                 </div>
             <?php } ?>
