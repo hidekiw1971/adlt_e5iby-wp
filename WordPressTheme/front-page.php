@@ -5,7 +5,7 @@
         <h2>front-page.php</h2>
         <!-- cards-gallery-list -->
         <!-- cards-gallery-list -->
-        <?php get_template_part('template-parts/loop', 'article') ?>
+        <?php get_template_part('template-parts/loop', 'front-page') ?>
         <!-- /cards-gallery-list -->
         <!-- /cards-gallery -->
     </main>
