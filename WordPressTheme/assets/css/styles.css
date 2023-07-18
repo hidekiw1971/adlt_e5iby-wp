@@ -285,7 +285,9 @@ section.article h5 {
 }
 
 section.article > p,
+section.article > a,
 section.article > blockquote {
+	display: block;
 	margin-bottom: 10px;
 	margin-bottom: 0.625rem;
 }
@@ -351,6 +353,10 @@ button.article-svideo:hover {
 .article > video {
 	margin-bottom: 30px;
 	margin-bottom: 1.875rem;
+}
+
+.article-pnlink {
+	margin-top: 50px;
 }
 
 .cards-swiper {

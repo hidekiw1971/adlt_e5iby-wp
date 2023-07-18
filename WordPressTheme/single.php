@@ -180,8 +180,9 @@
             <?php echo "<h2>メーカー</h2>"; ?>
             <?php
             $video_maker = get_post_meta(get_the_ID(), 'video_maker', true);
+            $video_maker_official = get_post_meta(get_the_ID(), 'video_maker_official', true);
             if (!empty($video_maker)) {
-                echo "<p>" . $video_maker . "</p>";
+                echo "<a href='" . $video_maker_official . "' target=_blank>" . $video_maker . "</a>";
             } else {
                 echo "<p>メーカー名が設定されてません。</p>";
             }

@@ -21,7 +21,9 @@ section.article h5 {
 }
 
 section.article>p,
+section.article>a,
 section.article>blockquote {
+    display: block;
     margin-bottom: rem(10);
 }
 
@@ -91,4 +93,8 @@ button.article-svideo:hover {
 
 .article>video {
     margin-bottom: rem(30);
+}
+
+.article-pnlink {
+    margin-top: 50px;
 }
