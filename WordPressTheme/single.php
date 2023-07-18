@@ -75,6 +75,80 @@
             ?>
             <!-- /主観的感想セット -->
 
+            <!-- コラボ原作同人誌作品をセット -->
+            <?php
+            $manga_img = get_post_meta(get_the_ID(), 'manga_img', true);
+            $manga_img_array = explode(',', $manga_img);
+            echo "<h2>原作同人誌とのコラボ</h2>";
+            if (!empty($manga_img)) {
+                echo "
+                <div class='swiper swiper-single'>
+                    <div class='swiper-wrapper'>
+                ";
+                foreach ($manga_img_array as $manga_img_url) {
+                    echo "
+                    <div class='swiper-slide'>
+                        <figure class='swiper-image'>
+                            <img src='" . $manga_img_url . "' alt=''>
+                        </figure>
+                    </div>
+                    ";
+                }
+                // 
+            } else {
+                echo "<p>同人誌とのコラボはありません。</p>";
+                // 
+            }
+            ?>
+            <?php
+            echo "
+                </div>
+            </div>
+            ";
+            ?>
+            <!-- /コラボ原作同人誌作品をセット -->
+
+            <!-- エロ漫画のタイトル -->
+            <?php
+            $manga_title = get_post_meta(get_the_ID(), 'manga_title', true);
+            $manga_url = get_post_meta(get_the_ID(), 'manga_url', true);
+            if (!empty($manga_title)) {
+                echo "<h2>エロ漫画タイトル</h2>";
+                echo "<a class='url' href='" . $manga_url . "' target='blank'>" . $manga_title . "</a>";
+                // 
+            } else {
+                // echo "エロ漫画タイトルなし";
+                // 
+            }
+            ?>
+            <!-- /エロ漫画のタイトル -->
+
+            <!-- エロ漫画の発行者（サークル） -->
+            <?php
+            $manga_hakkousha = get_post_meta(get_the_ID(), 'manga_hakkousha', true);
+            if (!empty($manga_hakkousha)) {
+                echo "<h2>エロ漫画の発行者（サークル）</h2>";
+                echo "<p>" . $manga_hakkousha . "</p>";
+                // 
+            } else {
+                // 
+            }
+            ?>
+            <!-- /エロ漫画の発行者（サークル） -->
+
+            <!-- エロ漫画の作画者 -->
+            <?php
+            $manga_sakuga = get_post_meta(get_the_ID(), 'manga_sakuga', true);
+            if (!empty($manga_sakuga)) {
+                echo "<h2>エロ漫画の作画者</h2>";
+                echo "<p>" . $manga_sakuga . "</p>";
+                // 
+            } else {
+                // 
+            }
+            ?>
+            <!-- /エロ漫画の作画者 -->
+
             <!-- AV女優について -->
             <?php echo "<h2>AV女優名について</h2>"; ?>
             <?php
@@ -186,6 +260,20 @@
                 </div>
             </nav>
             <!-- /accordion(sns) -->
+
+            <!-- その他 -->
+            <?php echo "<h2>その他</h2>"; ?>
+            <?php
+            $content = get_the_content();
+            if (!empty($content)) {
+                echo "<p>" . $content . "</p>";
+                // 
+            } else {
+                echo "<p>特になし。</p>";
+                // 
+            }
+            ?>
+            <!-- /その他 -->
 
             <!-- article-button -->
             <button class="article-svideo">本編はこちら</button>
