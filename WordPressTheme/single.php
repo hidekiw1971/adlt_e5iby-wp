@@ -114,7 +114,7 @@
             $manga_url = get_post_meta(get_the_ID(), 'manga_url', true);
             if (!empty($manga_title)) {
                 echo "<h2>エロ漫画タイトル</h2>";
-                echo "<a class='url' href='" . $manga_url . "' target='blank'>" . $manga_title . "</a>";
+                echo "<a class='url' href='" . $manga_url . "' target=_blank'>" . $manga_title . "</a>";
                 // 
             } else {
                 // echo "エロ漫画タイトルなし";
@@ -266,7 +266,7 @@
             <?php
             $content = get_the_content();
             if (!empty($content)) {
-                echo "<p>" . $content . "</p>";
+                echo "$content";
                 // 
             } else {
                 echo "<p>特になし。</p>";
@@ -276,7 +276,12 @@
             <!-- /その他 -->
 
             <!-- article-button -->
-            <button class="article-svideo">本編はこちら</button>
+            <button class="article-svideo">
+                <?php
+                $video_overview_url = get_post_meta(get_the_ID(), 'video_overview_url', true);
+                echo "<a href='" . $video_overview_url . "' target=_blank'>本編はこちら</a>";
+                ?>
+            </button>
             <!-- /article-button -->
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
