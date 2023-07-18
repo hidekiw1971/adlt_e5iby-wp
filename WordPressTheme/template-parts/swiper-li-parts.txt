@@ -3,7 +3,7 @@
         <!-- card-swiper -->
         <div class="swiper-wrapper">
             <?php
-            $swiper_images = get_post_meta(get_the_ID(), 'swiper_img', true);
+            $swiper_images = get_post_meta(get_the_ID(), 'swiper-img', true);
             $swiper_images_array = explode(',', $swiper_images);
             foreach ($swiper_images_array as $image_url) {
             ?>

@@ -2,7 +2,7 @@
 
 <section class="container">
     <main class="main">
-        <h2>index.php</h2>
+        <!-- <h2>index.php</h2> -->
         <!-- cards-gallery-list -->
         <ul class="cards-gallery">
             <!-- cards-gallery-list -->

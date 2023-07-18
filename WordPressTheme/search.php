@@ -2,7 +2,7 @@
 
 <section class="container">
     <main class="main">
-        <h2>search.php</h2>
+        <!-- <h2>search.php</h2> -->
         <!-- function -->
         <h2><?php the_search_query(); ?>の検索結果</h2>
         <!-- cards-gallery-list -->

@@ -85,7 +85,7 @@
                     echo "<p><strong>$video_av_actress</strong></p>";
                 }
             } else {
-                echo "<p>AV女優名がセットされてません。</p>";
+                echo "<p>AV女優名は不明です。</p>";
             }
             ?>
             <!-- /AV女優について -->
