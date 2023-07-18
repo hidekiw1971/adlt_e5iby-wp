@@ -359,6 +359,10 @@ button.article-svideo:hover {
 	margin-top: 50px;
 }
 
+.article .blog {
+	margin: 0 auto;
+}
+
 .cards-swiper {
 	margin-bottom: 10px;
 	margin-bottom: 0.625rem;
