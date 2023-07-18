@@ -391,6 +391,8 @@ h2.swiper-card-title {
 
 ul.cards-gallery {
 	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
@@ -398,6 +400,7 @@ ul.cards-gallery {
 li.cards-gallery-list {
 	-ms-flex-preferred-size: 50%;
 	flex-basis: 50%;
+	width: 50%;
 }
 
 ul.categories {
@@ -774,6 +777,7 @@ section.article > video {
 li.cards-gallery-list {
 	-ms-flex-preferred-size: 25%;
 	flex-basis: 25%;
+	width: 25%;
 }
 
 .instagram-media {

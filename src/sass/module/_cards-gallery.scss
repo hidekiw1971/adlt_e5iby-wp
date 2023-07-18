@@ -1,8 +1,8 @@
 @use "global" as *;
 
 ul.cards-gallery {
-  // display: flex;
   display: -webkit-box;
+  display: flex;
   flex-wrap: wrap;
 
   @include mq(md) {
@@ -12,9 +12,11 @@ ul.cards-gallery {
 
 li.cards-gallery-list {
   flex-basis: 50%;
+  width: 50%;
 
   @include mq(md) {
     flex-basis: 25%;
+    width: 25%;
     // 
   }
 }
