@@ -1,0 +1,10 @@
+@use "global" as *;
+
+#formWrap {
+    background: rgba(230, 230, 250, 1);
+    padding: rem(10);
+}
+
+table.formTable>tbody {
+    text-align: left;
+}

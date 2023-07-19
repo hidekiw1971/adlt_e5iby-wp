@@ -78,10 +78,10 @@ img:not([alt]) {
 
 
 /* フォームリセット */
-input,
+// input,
 button,
-select,
-textarea {
+select {
+  // textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -98,7 +98,7 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  display: none;
+  // display: none;
 }
 
 input[type="submit"],
