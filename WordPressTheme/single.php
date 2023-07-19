@@ -75,6 +75,30 @@
             ?>
             <!-- /主観的感想セット -->
 
+            <!-- レビュー抜粋 -->
+            <?php
+            $review_excerpt = get_post_meta(get_the_ID(), 'review_excerpt', true);
+            $review_excerpt_array = explode(',', $review_excerpt);
+            echo "<h2>参考になったレビュー抜粋</h2>";
+
+            if (!empty($review_excerpt)) {
+                echo "<ul class='review'>";
+                foreach ($review_excerpt_array as $review) {
+                    echo "
+                    <li class='review-list'>
+                    <a href='" . $video_overview_url . "' target=_blank>" . $review . "</a>
+                    </li>
+                    ";
+                }
+                echo "</ul>";
+                // 
+            } else {
+                echo "<p>参考になるレビューはまだありません。</p>";
+                // 
+            }
+            ?>
+            <!-- /レビュー抜粋 -->
+
             <!-- コラボ原作同人誌作品をセット -->
             <?php
             $manga_img = get_post_meta(get_the_ID(), 'manga_img', true);

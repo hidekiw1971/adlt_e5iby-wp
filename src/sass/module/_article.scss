@@ -20,9 +20,10 @@ section.article h5 {
     color: rgba(255, 20, 147, 1);
 }
 
-section.article>p,
-section.article>a,
-section.article>blockquote {
+section.article p,
+section.article a,
+section.article ul,
+section.article blockquote {
     display: block;
     margin-bottom: rem(10);
 }

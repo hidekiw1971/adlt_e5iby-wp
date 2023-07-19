@@ -277,9 +277,10 @@ section.article h5 {
 	margin-bottom: 0.625rem;
 }
 
-section.article > p,
-section.article > a,
-section.article > blockquote {
+section.article p,
+section.article a,
+section.article ul,
+section.article blockquote {
 	display: block;
 	margin-bottom: 10px;
 	margin-bottom: 0.625rem;
