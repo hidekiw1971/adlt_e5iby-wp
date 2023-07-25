@@ -6,11 +6,11 @@
     $twitter_url_array = explode(',', $twitter_url);
     if (!empty($twitter_name)) {
         foreach ($twitter_name_array as $key => $twitterName) {
-            if (!empty($twitter_name)) {
-                $twitter_url = isset($twitter_url_array[$key]) ? $twitter_url_array[$key] : '';
+            if (!empty($twitterName)) {
+                $twitterUrl = isset($twitter_url_array[$key]) ? $twitter_url_array[$key] : '';
                 echo "
                 <li class='twitter-list'>
-                    <a href='" . $twitter_url . "' target='_blank'>" . $twitterName_name . "</a>
+                    <a href='" . $twitterUrl . "' target='_blank'>" . $twitterName . "</a>
                 </li>
                 ";
             }

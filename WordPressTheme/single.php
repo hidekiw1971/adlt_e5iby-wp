@@ -273,15 +273,7 @@
                             <div class="twitter-wrapper">
                                 <!-- twitter1 -->
                                 <?php
-                                $twitter_code = get_post_meta(get_the_ID(), 'twitter_code', true);
-                                $twitter_code_array = explode(',', $twitter_code);
-                                foreach ($twitter_code_array as $twitter) {
-                                    if (!empty($twitter)) {
-                                        echo $twitter;
-                                    } else {
-                                        echo "twitterはありませんでした。";
-                                    }
-                                }
+                                get_template_part('template-parts/loop', 'twitter');
                                 ?>
                                 <!-- /twitter1 -->
                             </div>
