@@ -324,6 +324,23 @@
                         </li>
                     </ul>
                 </div>
+                <div class="accordion-menu-item">
+                    <div class="accordion-menu-item-btn">
+                        <h2>公式youtubeチャンネル</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <!-- accordion contents -->
+                            <div class="youtube">
+                                <?php
+                                get_template_part('template-parts/loop', 'youtube');
+                                ?>
+                            </div>
+                            <!-- instagram -->
+                            <!-- /accordion contents -->
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <!-- /accordion(sns) -->
 
