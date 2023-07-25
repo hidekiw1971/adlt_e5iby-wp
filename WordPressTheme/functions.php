@@ -15,6 +15,7 @@ function my_script_init()
 	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '0.0.0', true);
 	wp_enqueue_style('swiper-css', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css', array(), '0.0.0');
 	wp_enqueue_style('style-css', get_template_directory_uri() . '/assets/css/styles.css', array(), '0.0.0');
+	wp_enqueue_style('contact-css', get_template_directory_uri() . '/assets/css/contact.css', array(), '0.0.0');
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '0.0.0', true);
 	wp_enqueue_script('polyfill', '//polyfill.io/v3/polyfill.min.js?features=es6', array(), '0.0.0', true);
 	wp_enqueue_script('micromodal', '//unpkg.com/micromodal/dist/micromodal.min.js', array(), '0.0.0', true);

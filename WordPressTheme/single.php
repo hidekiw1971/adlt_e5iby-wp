@@ -75,11 +75,11 @@
             ?>
             <!-- /主観的感想セット -->
 
-            <!-- レビュー抜粋 -->
+            <!-- 参考になった良いレビュー抜粋 -->
             <?php
             $review_excerpt = get_post_meta(get_the_ID(), 'review_excerpt', true);
             $review_excerpt_array = explode(',', $review_excerpt);
-            echo "<h2>参考になったレビュー抜粋</h2>";
+            echo "<h2>良いレビュー抜粋</h2>";
 
             if (!empty($review_excerpt)) {
                 echo "<ul class='review'>";
@@ -93,11 +93,35 @@
                 echo "</ul>";
                 // 
             } else {
-                echo "<p>参考になるレビューはまだありません。</p>";
+                echo "<p>良いレビューはまだありません。</p>";
                 // 
             }
             ?>
-            <!-- /レビュー抜粋 -->
+            <!-- /参考になった良いレビュー抜粋 -->
+
+            <!-- 参考になった悪いレビュー抜粋 -->
+            <?php
+            $bad_review_excerpt = get_post_meta(get_the_ID(), 'bad_review_excerpt', true);
+            $bad_review_excerpt_array = explode(',', $bad_review_excerpt);
+            echo "<h2>悪いレビュー抜粋</h2>";
+
+            if (!empty($bad_review_excerpt)) {
+                echo "<ul class='review'>";
+                foreach ($bad_review_excerpt_array as $bad_review) {
+                    echo "
+                    <li class='review-list'>
+                    <a href='" . $video_overview_url . "' target=_blank>" . $bad_review . "</a>
+                    </li>
+                    ";
+                }
+                echo "</ul>";
+                // 
+            } else {
+                echo "<p>悪いレビューはまだありません。</p>";
+                // 
+            }
+            ?>
+            <!-- /参考になった悪いレビュー抜粋 -->
 
             <!-- コラボ原作同人誌作品をセット -->
             <?php
