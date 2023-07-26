@@ -23,7 +23,7 @@
                       <div id="formWrap">
                           <!-- <h3>お問い合わせ</h3> -->
                           <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
-                          <form method="post" action="./mail.php">
+                          <form method="post" action="./page-mail.php">
                               <table class="formTable">
                                   <tr>
                                       <th>ご用件</th>
