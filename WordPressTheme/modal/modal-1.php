@@ -6,7 +6,7 @@
           <div class="modal-content">
               <!-- モーダルのヘッダー -->
               <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">お問い合わせ</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">お問い合わせ１</h5>
                   <!-- 閉じるアイコン -->
                   <button type="button" class="close" data-dismiss="modal" aria-label="close">
                       <span aria-hidden="true">&times;</span>
@@ -23,7 +23,7 @@
                       <div id="formWrap">
                           <!-- <h3>お問い合わせ</h3> -->
                           <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
-                          <form method="post" action="<?php echo home_url(); ?>/modal/mail.php">
+                          <form method="post" action="mail.php">
                               <table class="formTable">
                                   <tr>
                                       <th>ご用件</th>
