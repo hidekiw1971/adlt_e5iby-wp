@@ -18,6 +18,10 @@
 <?php include('modal-5.php'); ?>
 <!-- /modal-5 アーカイブ -->
 
+<!-- modal-6 プライバシーポリシー -->
+<?php include('modal-6.php'); ?>
+<!-- /modal-6 プライバシーポリシー -->
+
 <!-- modal-mobile アーカイブ -->
 <?php include('modal-mobile.php'); ?>
 <!-- /modal-mobile アーカイブ -->

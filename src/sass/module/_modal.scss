@@ -19,6 +19,7 @@
     margin: 0 rem(10);
     width: 90%;
     overflow-y: auto;
+    // overscroll-behavior: auto;
 
     @include mq(md) {
         width: 50%;

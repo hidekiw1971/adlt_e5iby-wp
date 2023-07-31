@@ -6,7 +6,7 @@
           <div class="modal-content">
               <!-- モーダルのヘッダー -->
               <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">お問い合わせ１</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">お問い合わせ</h5>
                   <!-- 閉じるアイコン -->
                   <button type="button" class="close" data-dismiss="modal" aria-label="close">
                       <span aria-hidden="true">&times;</span>
@@ -17,13 +17,87 @@
               <!-- モーダルの本文 -->
               <div class="modal-body">
                   <!-- contents -->
+                  <!DOCTYPE HTML>
+                  <html lang="ja">
+
+                  <head>
+                      <meta charset="utf-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+                      <meta name="format-detection" content="telephone=no">
+                      <title>サンプル</title>
+                      <meta name="Description" content="" />
+                      <meta name="Keywords" content="" />
+                      <meta http-equiv="Content-Style-Type" content="text/css" />
+                      <style type="text/css">
+                          #formWrap {
+                              width: 700px;
+                              margin: 0 auto;
+                              color: #555;
+                              line-height: 120%;
+                              font-size: 90%;
+                          }
+
+                          table.formTable {
+                              width: 100%;
+                              margin: 0 auto;
+                              border-collapse: collapse;
+                          }
+
+                          table.formTable td,
+                          table.formTable th {
+                              border: 1px solid #ccc;
+                              padding: 10px;
+                          }
+
+                          table.formTable th {
+                              width: 30%;
+                              font-weight: normal;
+                              background: #efefef;
+                              text-align: left;
+                          }
+
+                          /*　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　*/
+                          @media screen and (max-width:572px) {
+                              #formWrap {
+                                  width: 95%;
+                                  margin: 0 auto;
+                              }
+
+                              table.formTable th,
+                              table.formTable td {
+                                  width: auto;
+                                  display: block;
+                              }
+
+                              table.formTable th {
+                                  margin-top: 5px;
+                                  border-bottom: 0;
+                              }
+
+                              form input[type="text"],
+                              form textarea {
+                                  width: 80%;
+                                  padding: 5px;
+                                  font-size: 110%;
+                                  display: block;
+                              }
+
+                              form input[type="submit"],
+                              form input[type="reset"],
+                              form input[type="button"] {
+                                  display: block;
+                                  width: 100%;
+                                  height: 40px;
+                              }
+                          }
+                      </style>
                   </head>
 
                   <body>
                       <div id="formWrap">
-                          <!-- <h3>お問い合わせ</h3> -->
+                          <h3>お問い合わせ</h3>
                           <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
-                          <form method="post" action="mail.php">
+                          <form method="post" action="<?php get_permalink(974); ?>">
                               <table class="formTable">
                                   <tr>
                                       <th>ご用件</th>
@@ -68,8 +142,10 @@
                           </form>
                           <p>※IPアドレスを記録しております。いたずらや嫌がらせ等はご遠慮ください</p>
                       </div>
+                  </body>
 
-                      <!-- /contents -->
+                  </html>
+                  <!-- /contents -->
               </div>
               <!-- /モーダルの本文 -->
               <!-- モーダルのフッター -->

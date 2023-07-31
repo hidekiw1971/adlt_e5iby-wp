@@ -46,7 +46,7 @@
                       <!-- /sidebar-list -->
                       <!-- sidebar-list -->
                       <li class="sidebar-list">
-                          <button type="button" class="btn" data-toggle="modal" data-target="#modal-6" data-dismiss="modal">お知らせ</button>
+                          <button type="button" class="btn" data-toggle="modal" data-target="#modal-6" data-dismiss="modal">プライバシーポリシー</button>
                       </li>
                       <!-- /sidebar-list -->
                       <!-- sidebar-list -->

@@ -1,0 +1,9 @@
+@use "global" as *;
+
+li.privacy-policy-li>h2 {
+    margin-bottom: rem(10);
+}
+
+li.privacy-policy-li {
+    margin-bottom: rem(30);
+}
