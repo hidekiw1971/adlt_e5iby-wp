@@ -97,7 +97,7 @@
                       <div id="formWrap">
                           <h3>お問い合わせ</h3>
                           <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
-                          <form method="post" action="<?php get_permalink(974); ?>">
+                          <form method="post" action="<?php home_url(); ?>/modal/mail.php">
                               <table class="formTable">
                                   <tr>
                                       <th>ご用件</th>
@@ -159,3 +159,5 @@
       <!-- /モーダルのダイヤログ本体 -->
   </div>
   <!-- /modal-1 -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
