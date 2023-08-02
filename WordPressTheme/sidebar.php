@@ -32,7 +32,7 @@
           <!-- /sidebar-list -->
           <!-- sidebar-list -->
           <li class="sidebar-list">
-              <button type="button" class="btn" data-toggle="modal" data-target="#modal-7" data-dismiss="modal">コンテンツ</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-7" data-dismiss="modal">プロフィール</button>
           </li>
           <!-- /sidebar-list -->
           <!-- sidebar-list -->

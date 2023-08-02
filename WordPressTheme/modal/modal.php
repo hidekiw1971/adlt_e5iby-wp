@@ -22,6 +22,10 @@
 <?php include('modal-6.php'); ?>
 <!-- /modal-6 プライバシーポリシー -->
 
+<!-- modal-7 プロフィール -->
+<?php include('modal-7.php'); ?>
+<!-- /modal-7 プロフィール -->
+
 <!-- modal-mobile アーカイブ -->
 <?php include('modal-mobile.php'); ?>
 <!-- /modal-mobile アーカイブ -->

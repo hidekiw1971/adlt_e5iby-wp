@@ -1,0 +1,9 @@
+@use "global" as *;
+
+li.profile-li>h3 {
+    margin-bottom: rem(10);
+}
+
+li.profile-li {
+    margin-bottom: rem(30);
+}
