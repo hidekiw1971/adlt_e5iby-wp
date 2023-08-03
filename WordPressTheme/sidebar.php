@@ -37,7 +37,7 @@
           <!-- /sidebar-list -->
           <!-- sidebar-list -->
           <li class="sidebar-list">
-              <button type="button" class="btn" data-toggle="modal" data-target="#modal-8" data-dismiss="modal">コンテンツ</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#modal-8" data-dismiss="modal">アダルトサイト一覧</button>
           </li>
           <!-- /sidebar-list -->
           <!-- sidebar-list -->
